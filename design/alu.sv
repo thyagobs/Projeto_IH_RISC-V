@@ -30,7 +30,7 @@ module alu#(
 	    4'b0110:        // BLT 
                     ALUResult = (SrcA < SrcB) ? 1 : 0;
 	    4'b0111:        // BGE 
-                    ALUResult = (SrcA > SrcB) ? 1 : 0;
+		    ALUResult = (SrcA >= SrcB) ? 1 : 0;
             4'b1000:        // BEQ
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
 	
