@@ -1,0 +1,576 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/thyago/Downloads/Projeto_IH_RISC-V
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1692451379
+!i10b 1
+!s100 J@Bf42a<9Q9R;nJSZl2>B2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJn2]j66lABn9zYZ4:V^@b2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1692450631
+8design/adder.sv
+Fdesign/adder.sv
+!i122 0
+Z6 L0 3 11
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1692451379.000000
+!s107 verif/tb_top.sv|design/RISC_V.sv|design/Datapath.sv|design/instructionmemory.sv|design/datamemory.sv|design/mux4.sv|design/mux2.sv|design/imm_Gen.sv|design/HazardDetection.sv|design/ForwardingUnit.sv|design/flopr.sv|design/Controller.sv|design/BranchUnit.sv|design/ALUController.sv|design/alu.sv|design/RegFile.sv|design/RegPack.sv|design/Memoria32Data.sv|design/Memoria32.sv|design/ramOnChipData.v|design/ramOnChip32.v|design/adder.sv|
+Z9 !s90 -reportprogress|300|-f|compile_verilog|
+!i113 1
+Z10 tCvgOpt 0
+valu
+R1
+R2
+!i10b 1
+!s100 98b5`g1>ALL@5JDzoSdF62
+R3
+IGjY2zdM@HnjgL:LCU^n=G2
+R4
+S1
+R0
+w1692450935
+8design/alu.sv
+Fdesign/alu.sv
+!i122 0
+L0 3 42
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 verif/tb_top.sv|design/RISC_V.sv|design/Datapath.sv|design/instructionmemory.sv|design/datamemory.sv|design/mux4.sv|design/mux2.sv|design/imm_Gen.sv|design/HazardDetection.sv|design/ForwardingUnit.sv|design/flopr.sv|design/Controller.sv|design/BranchUnit.sv|design/ALUController.sv|design/alu.sv|design/RegFile.sv|design/RegPack.sv|design/Memoria32Data.sv|design/Memoria32.sv|design/ramOnChipData.v|design/ramOnChip32.v|design/adder.sv|
+R9
+!i113 1
+R10
+vALUController
+R1
+R2
+!i10b 1
+!s100 Lm46Qcj;e7;BeSNg27e_=2
+R3
+I^mV]`bUc^h68gkXI=bQbn0
+R4
+S1
+R0
+w1692450882
+8design/ALUController.sv
+Fdesign/ALUController.sv
+!i122 0
+L0 3 36
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@a@l@u@controller
+vBranchUnit
+R1
+R2
+!i10b 1
+!s100 6mfj04GQ4<NdfP3N3I?:l2
+R3
+IhhC[SOcA9]aYSGm@LQjNX0
+R4
+S1
+R0
+R5
+8design/BranchUnit.sv
+Fdesign/BranchUnit.sv
+!i122 0
+L0 3 26
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@branch@unit
+vController
+R1
+R2
+!i10b 1
+!s100 ;3n;CD02NA`ITWcnPG8Tz1
+R3
+I>64>hdSkzDUaA3S81aY1o2
+R4
+S1
+R0
+w1692450859
+8design/Controller.sv
+Fdesign/Controller.sv
+!i122 0
+L0 3 37
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@controller
+vdatamemory
+R1
+R2
+!i10b 1
+!s100 :U7:`NI4[Mdm`JaQ@69]m0
+R3
+I:^>PQ=d26SbkUm;_aahd73
+R4
+S1
+R0
+R5
+8design/datamemory.sv
+Fdesign/datamemory.sv
+!i122 0
+L0 3 55
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vDatapath
+R1
+Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 ;InE;V_QGnEh6ifo_X7jB2
+DXx4 work 16 Datapath_sv_unit 0 22 >Qn^j7>H5[7o]Llh>lF7J2
+R2
+R4
+r1
+!s85 0
+!i10b 1
+!s100 cWkHWmncDlQL`5?j6eNGC1
+IMTh=V7BVk4@zQ<aQJE5eT2
+!s105 Datapath_sv_unit
+S1
+R0
+R5
+Z13 8design/Datapath.sv
+Z14 Fdesign/Datapath.sv
+!i122 0
+L0 5 312
+R7
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@datapath
+XDatapath_sv_unit
+R1
+R12
+R2
+V>Qn^j7>H5[7o]Llh>lF7J2
+r1
+!s85 0
+!i10b 1
+!s100 K:EP;anA:W4111N=WXz4a0
+I>Qn^j7>H5[7o]Llh>lF7J2
+!i103 1
+S1
+R0
+R5
+R13
+R14
+!i122 0
+L0 3 0
+R7
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@datapath_sv_unit
+vflopr
+R1
+R2
+!i10b 1
+!s100 ElcDNl85mGL9dF?Xd3Za63
+R3
+In]dPUFTHF9^5Y]_><c:O21
+R4
+S1
+R0
+R5
+8design/flopr.sv
+Fdesign/flopr.sv
+!i122 0
+L0 3 16
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vForwardingUnit
+R1
+R2
+!i10b 1
+!s100 CEcEo:_iR9UO6Xd4H`cAC3
+R3
+I1jVbR33`W=lHD^RBOd?]b2
+R4
+S1
+R0
+R5
+8design/ForwardingUnit.sv
+Fdesign/ForwardingUnit.sv
+!i122 0
+L0 3 18
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@forwarding@unit
+vHazardDetection
+R1
+R2
+!i10b 1
+!s100 =:@:A`@P^b2GYnY^68bZa2
+R3
+I1?nQC4j3jK?@j`A6g^iUU0
+R4
+S1
+R0
+R5
+8design/HazardDetection.sv
+Fdesign/HazardDetection.sv
+!i122 0
+R6
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@hazard@detection
+vimm_Gen
+R1
+R2
+!i10b 1
+!s100 IGz>DzTjc7HSYQOZD30RD1
+R3
+I?nClS877zR5cb4FgA?Fk31
+R4
+S1
+R0
+w1692450904
+8design/imm_Gen.sv
+Fdesign/imm_Gen.sv
+!i122 0
+L0 3 32
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nimm_@gen
+vinstructionmemory
+R1
+R2
+!i10b 1
+!s100 6>jnlWCg62QiF^iRiX?C81
+R3
+I68F`K17L;nczX3PCHT<PE0
+R4
+S1
+R0
+R5
+8design/instructionmemory.sv
+Fdesign/instructionmemory.sv
+!i122 0
+L0 4 23
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vMemoria32
+R1
+R2
+!i10b 1
+!s100 oLjQ]Qb`C9VE3a1DaRF6=0
+R3
+I=;=2>5aQBO:L;HQjN6JD]3
+R4
+S1
+R0
+R5
+8design/Memoria32.sv
+Fdesign/Memoria32.sv
+!i122 0
+Z15 L0 26 94
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@memoria32
+vMemoria32Data
+R1
+R2
+!i10b 1
+!s100 ]NU@J;o]<e]AW?:CD;Fg21
+R3
+IBe2Jok8lkaZed@U8AU;gd2
+R4
+S1
+R0
+R5
+8design/Memoria32Data.sv
+Fdesign/Memoria32Data.sv
+!i122 0
+R15
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@memoria32@data
+vmux2
+R1
+R2
+!i10b 1
+!s100 9Hgm:_HaC7CH^93]dTO>S3
+R3
+IjSZL^lmCIfAY1dFPGZRCg1
+R4
+S1
+R0
+R5
+8design/mux2.sv
+Fdesign/mux2.sv
+!i122 0
+L0 3 12
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vmux4
+R1
+R2
+!i10b 1
+!s100 PkRNb1:FWO8e2Pa@XbPjl1
+R3
+IS:>blWj>aO4h`]Q<l;D<<2
+R4
+S1
+R0
+R5
+8design/mux4.sv
+Fdesign/mux4.sv
+!i122 0
+L0 3 14
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+XPipe_Buf_Reg_PKG
+R1
+R2
+!i10b 1
+!s100 k?>B3>50o;E82z7G4HUZg2
+R3
+I;InE;V_QGnEh6ifo_X7jB2
+V;InE;V_QGnEh6ifo_X7jB2
+S1
+R0
+R5
+8design/RegPack.sv
+Fdesign/RegPack.sv
+!i122 0
+L0 1 0
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@pipe_@buf_@reg_@p@k@g
+vramOnChip32
+R2
+!i10b 1
+!s100 ANVMcJ>zoMilMS0;3XPLA0
+R3
+I3f5fSHWD@[00?_9OzBVZS1
+R4
+R0
+R5
+8design/ramOnChip32.v
+Fdesign/ramOnChip32.v
+!i122 0
+Z16 L0 40 78
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nram@on@chip32
+vramOnChipData
+R2
+!i10b 1
+!s100 _gV6BH4AzTX?eTUV22eHj0
+R3
+IVEZUb9`ki:PB2W6^=:RS=0
+R4
+R0
+R5
+8design/ramOnChipData.v
+Fdesign/ramOnChipData.v
+!i122 0
+R16
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nram@on@chip@data
+vRegFile
+R1
+R2
+!i10b 1
+!s100 :?B`7Zn]Gb5m`Z5KL_^>03
+R3
+IQ_F?dXmFlzAGFag^83oNR3
+R4
+S1
+R0
+R5
+8design/RegFile.sv
+Fdesign/RegFile.sv
+!i122 0
+L0 3 35
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@reg@file
+vriscv
+R1
+R2
+!i10b 1
+!s100 ZG:[k5[V9?jY[REj7dU`m2
+R3
+I?A_HKa@h^`mcloZZl>H7M3
+R4
+S1
+R0
+R5
+8design/RISC_V.sv
+Fdesign/RISC_V.sv
+!i122 0
+L0 3 71
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vtb_top
+R1
+R2
+!i10b 1
+!s100 <k4lG_MkNX?2l=l78L8cm0
+R3
+I>XT6@eUhnN<Eg?g7AciGM3
+R4
+S1
+R0
+R5
+8verif/tb_top.sv
+Fverif/tb_top.sv
+!i122 0
+L0 3 62
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10

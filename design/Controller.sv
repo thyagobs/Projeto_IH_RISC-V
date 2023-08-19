@@ -21,17 +21,19 @@ module Controller (
 
   logic [6:0] R_TYPE, LW, SW, BR;
 
+  assign I_TYPE = 7'b0010011;  //slli, addi
   assign R_TYPE = 7'b0110011;  //add,and
   assign LW = 7'b0000011;  //lw
-  assign SW = 7'b0100011;  //sw
+  assign SW = 7'b0100011;  //sw 
   assign BR = 7'b1100011;  //beq
 
-  assign ALUSrc = (Opcode == LW || Opcode == SW);
+  assign ALUSrc = (Opcode == LW) || (Opcode == SW) || (Opcode == 7'b0010011);
   assign MemtoReg = (Opcode == LW);
-  assign RegWrite = (Opcode == R_TYPE || Opcode == LW);
+  assign RegWrite = (Opcode == R_TYPE) || (Opcode == LW) || (Opcode == 7'b0010011);
   assign MemRead = (Opcode == LW);
   assign MemWrite = (Opcode == SW);
   assign ALUOp[0] = (Opcode == BR);
-  assign ALUOp[1] = (Opcode == R_TYPE);
+  assign ALUOp[1] = (Opcode == R_TYPE) || (Opcode == 7'b0010011);
   assign Branch = (Opcode == BR);
+
 endmodule
