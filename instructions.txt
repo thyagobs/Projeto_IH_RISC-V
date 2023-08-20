@@ -1,2 +1,5 @@
-lw x4,0(x0)
-srli x8,x4,2
+addi x3,x0,0
+addi x4,x0,0
+beq x4,x3,8
+addi x8,x0,0
+addi x8,x0,1

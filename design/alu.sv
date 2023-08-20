@@ -37,8 +37,10 @@ module alu#(
                     ALUResult = SrcA - SrcB;  
             4'b1011:        // ADD    
                     ALUResult = SrcA + SrcB; 
-            4'b1100:        // SLT 
-		    ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;  
+            4'b1100:        // SLT e SLTI
+		    ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
+            4'b1101:        // SRAI
+                    ALUResult = $signed(SrcA) >>> SrcB[4:0]; 
             default:
                     ALUResult = 0;
             endcase

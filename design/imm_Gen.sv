@@ -8,16 +8,16 @@ module imm_Gen (
 
   always_comb
     case (inst_code[6:0])
-      7'b0000011:  /*I-type load part*/
+      7'b0000011:  /*Loads*/
       Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[31:20]};
 
-      7'b0010011:  /*ADDI*/
-      Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[31:20]};
+      7'b0010011:  /*Arithmetic and logical operations*/
+      Imm_out = (inst_code [14:12] == 3'b101) ? ({27'b0, inst_code [24:20]}) : ({inst_code[31] == 1 ? 20'hFFFFF : 20'b0, inst_code[31:20]}); 
 
-      7'b0100011:  /*S-type*/
+      7'b0100011:  /*Stores*/
       Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[31:25], inst_code[11:7]};
 
-      7'b1100011:  /*B-type*/
+      7'b1100011:  /*Branchs*/
       Imm_out = {
         inst_code[31] ? 19'h7FFFF : 19'b0,
         inst_code[31],
@@ -26,6 +26,8 @@ module imm_Gen (
         inst_code[11:8],
         1'b0
       };
+      // 0 000000 (0|0011) (0010|0) (000) 1100| 0 (1100011) tradução de beq x4,x3,8
+      // 0000000000000000000 0 0 000000 1100 0 imediato gerado 
 
       default: Imm_out = {32'b0};
 
