@@ -18,7 +18,9 @@ module alu#(
             4'b0000:        // AND
                     ALUResult = SrcA & SrcB;
 	    4'b0001:        // OR
-		    ALUResult = SrcA | SrcB;	
+		    ALUResult = SrcA | SrcB;
+            4'b0010:	    // LUI
+	            ALUResult = SrcB;	
 	    4'b0011:	    // XOR
 	            ALUResult = SrcA ^ SrcB;
             4'b0100:	    // SLLI

@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/thyago/Downloads/Projeto_IH_RISC-V
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1692614392
+Z2 !s110 1692625212
 !i10b 1
 !s100 J@Bf42a<9Q9R;nJSZl2>B2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1692614392.000000
+Z8 !s108 1692625212.000000
 !s107 verif/tb_top.sv|design/RISC_V.sv|design/Datapath.sv|design/instructionmemory.sv|design/datamemory.sv|design/mux4.sv|design/mux2.sv|design/imm_Gen.sv|design/HazardDetection.sv|design/ForwardingUnit.sv|design/flopr.sv|design/Controller.sv|design/BranchUnit.sv|design/ALUController.sv|design/alu.sv|design/RegFile.sv|design/RegPack.sv|design/Memoria32Data.sv|design/Memoria32.sv|design/ramOnChipData.v|design/ramOnChip32.v|design/adder.sv|
 Z9 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -37,17 +37,17 @@ valu
 R1
 R2
 !i10b 1
-!s100 7?KdRV]2z:2bMDg8J?Jz;3
+!s100 RN9clj7QmghWlV=AlS2YE0
 R3
-IH`_jIXFlGLX:V4e<<cnhi2
+InG?:ZZWC_f`I_Voh__=KF3
 R4
 S1
 R0
-w1692545187
+w1692624918
 8design/alu.sv
 Fdesign/alu.sv
 !i122 0
-L0 3 46
+L0 3 48
 R7
 r1
 !s85 0
@@ -61,17 +61,17 @@ vALUController
 R1
 R2
 !i10b 1
-!s100 dQFKLTe6bCV:Je:SRU7jW1
+!s100 ZOhN5dZ5kab1oC>dzWZ110
 R3
-I^Of[mTZDdTfb5D>eRSF3U3
+IVZ7NPK>4<]h0FaO8>Eea32
 R4
 S1
 R0
-w1692543073
+w1692625009
 8design/ALUController.sv
 Fdesign/ALUController.sv
 !i122 0
-L0 3 45
+L0 3 46
 R7
 r1
 !s85 0
@@ -111,17 +111,17 @@ vController
 R1
 R2
 !i10b 1
-!s100 k48EEnZ09Bf@Uz[@cYjR11
+!s100 @CMN[EOb6M4RUcQz1lk<N1
 R3
-IOS@Ab^Q323feCZe`4m@Dj1
+IiU:M:A7JV1SIl:Q[3Eh8;3
 R4
 S1
 R0
-w1692480455
+w1692624707
 8design/Controller.sv
 Fdesign/Controller.sv
 !i122 0
-L0 3 37
+L0 3 38
 R7
 r1
 !s85 0
@@ -142,7 +142,7 @@ I>n9oeMU8IB@5?1S03fD4R1
 R4
 S1
 R0
-w1692582194
+w1692623070
 8design/datamemory.sv
 Fdesign/datamemory.sv
 !i122 0
@@ -287,17 +287,17 @@ vimm_Gen
 R1
 R2
 !i10b 1
-!s100 9aBJ@Vj:H:NDGA?0<DgVZ1
+!s100 zHG<[zH6R]FhCDZV?C3k93
 R3
-I?K2=i:?6k;FV9=Q=n^Aa]1
+ICDfSFBPRPO7B`lDJU6cnO0
 R4
 S1
 R0
-w1692545578
+w1692623618
 8design/imm_Gen.sv
 Fdesign/imm_Gen.sv
 !i122 0
-L0 3 34
+L0 3 37
 R7
 r1
 !s85 0
