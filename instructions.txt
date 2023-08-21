@@ -1,5 +1,7 @@
-addi x3,x0,0
-addi x4,x0,0
-beq x4,x3,8
-addi x8,x0,0
-addi x8,x0,1
+lw x3,0(x0)
+lw x4,4(x0)
+bne x4,x3,8
+add x8,x0,x0
+add x8,x3,x4
+add x8,x8,x4
+add x8,x8,x4
