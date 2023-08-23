@@ -20,9 +20,24 @@ module imm_Gen (
       7'b0110111:  /*LUI*/
       Imm_out = {inst_code[31:12], 12'b0};
 
+      7'b1101111:  /*JAL*/
+      Imm_out = {
+        inst_code[31] ? 12'b1 : 12'b0,
+        inst_code[31],
+        inst_code[19:12],
+        inst_code[20],
+        inst_code[30:21]
+      };
+
+      7'b1100111:  /*JALR*/
+      Imm_out = {
+        inst_code[31] ? 20'b1 : 20'b0,
+        inst_code[31:20]
+      };
+
       7'b1100011:  /*Branchs*/
       Imm_out = {
-        inst_code[31] ? 19'h7FFFF : 19'b0,
+        inst_code[31] ? 19'b1 : 19'b0,
         inst_code[31],
         inst_code[7],
         inst_code[30:25],
