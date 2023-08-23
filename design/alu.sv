@@ -84,6 +84,8 @@ module alu#(
 		    ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
             4'b1101:        // SRAI
                     ALUResult = $signed(SrcA) >>> SrcB[4:0]; 
+            4'b1110:        //JAL
+                    ALUResult = 1;
             default:
                     ALUResult = 0;
             endcase
