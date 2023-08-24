@@ -48,7 +48,7 @@ module alu#(
         //     4'b1101:        // SRAI
         //             $display ("%d", Operation); 
         //     default:
-        //             $display ("deu merda");
+        //             $display ("%d", Operation);
         //     endcase
         // end
 
@@ -85,7 +85,7 @@ module alu#(
             4'b1101:        // SRAI
                     ALUResult = $signed(SrcA) >>> SrcB[4:0]; 
             4'b1110:        //JAL
-                    ALUResult = 1;
+                    ALUResult = 1; //sempre 1 porque o jal não precisa satisfazer nenhuma condição antes de pular
             default:
                     ALUResult = 0;
             endcase

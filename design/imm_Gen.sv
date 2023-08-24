@@ -23,10 +23,10 @@ module imm_Gen (
       7'b1101111:  /*JAL*/
       Imm_out = {
         inst_code[31] ? 12'b1 : 12'b0,
-        inst_code[31],
         inst_code[19:12],
         inst_code[20],
-        inst_code[30:21]
+        inst_code[30:21],
+        1'b0
       };
 
       7'b1100111:  /*JALR*/

@@ -8,8 +8,14 @@ module ALUController (
 
     //Output
     output logic [3:0] Operation,  // operation selection for ALU
-    input logic jals
+    input logic jals,
+    input logic clk
 );
+
+    // always @(posedge clk)
+    // begin
+    //     $display (">>>jals: %d, ALUOp = %b<<", jals, ALUOp);
+    // end
 
   assign Operation[0] = ((ALUOp == 2'b10) && (Funct3 == 3'b110) && (Funct7 == 7'b0000000)) ||  // OR
       ((ALUOp == 2'b10) && (Funct3 == 3'b100) && (Funct7 == 7'b0000000)) || // XOR
@@ -21,7 +27,7 @@ module ALUController (
       ((ALUOp == 2'b00)); //LW/SW
 
   assign Operation[1] = (ALUOp == 2'b00) ||  // LW\SW
-      ((ALUOp == 2'b11) && (~jals)) || // LUI
+      ((ALUOp == 2'b11) && (jals == 0)) || // LUI
       ((ALUOp == 2'b11) && (jals)) || // JAL
       ((ALUOp == 2'b10) && (Funct3 == 3'b000) && (Funct7 != 7'b0100000)) ||  // ADD
       ((ALUOp == 2'b10) && (Funct3 == 3'b100) && (Funct7 == 7'b0000000)) || // XOR
