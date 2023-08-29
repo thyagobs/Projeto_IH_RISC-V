@@ -14,6 +14,7 @@
     design/HazardDetection.sv
     design/imm_Gen.sv
     design/mux2.sv
+    design/mux3.sv
     design/mux4.sv
     design/datamemory.sv
     design/instructionmemory.sv

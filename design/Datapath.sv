@@ -316,10 +316,12 @@ module Datapath #(
   end
 
   //--// The LAST Block
-  mux2 #(32) resmux (
+  mux3 #(32) resmux (
       D.Alu_Result,
       D.MemReadData,
+      D.Pc_Four,
       D.MemtoReg,
+      D.JalSel,
       WrmuxSrc
   );
 
