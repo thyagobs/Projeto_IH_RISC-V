@@ -42,6 +42,7 @@ package Pipe_Buf_Reg_PKG;
     logic [2:0]  func3;
     logic [6:0]  func7;
     logic [31:0] Curr_Instr;
+    logic JalSel;
   } ex_mem_reg;
 
   // Reg D
@@ -55,5 +56,6 @@ package Pipe_Buf_Reg_PKG;
     logic [31:0] MemReadData;
     logic [4:0]  rd;
     logic [31:0] Curr_Instr;
+    logic JalSel;
   } mem_wb_reg;
 endpackage

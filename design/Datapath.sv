@@ -46,8 +46,9 @@ module Datapath #(
   logic [DATA_W-1:0] ReadData;
   logic [DATA_W-1:0] SrcB, ALUResult;
   logic [DATA_W-1:0] ExtImm, BrImm, Old_PC_Four, BrPC;
-  logic [DATA_W-1:0] WrmuxSrc;
+  logic [DATA_W-1:0] WrmuxSrc, WrmuxSrcF;
   logic PcSel;  // mux select / flush signal
+  logic JalSel; //para escrever o endereço de retorno no reg dest
   logic [1:0] FAmuxSel;
   logic [1:0] FBmuxSel;
   logic [DATA_W-1:0] FAmux_Result;
@@ -230,7 +231,9 @@ module Datapath #(
       BrImm,
       Old_PC_Four,
       BrPC,
-      PcSel
+      PcSel,
+      JalSel,
+      B.jals
   );
 
   // EX_MEM_Reg C;
@@ -249,6 +252,7 @@ module Datapath #(
       C.rd <= 0;
       C.func3 <= 0;
       C.func7 <= 0;
+      C.JalSel <= 0;
     end else begin
       C.RegWrite <= B.RegWrite;
       C.MemtoReg <= B.MemtoReg;
@@ -263,6 +267,7 @@ module Datapath #(
       C.func3 <= B.func3;
       C.func7 <= B.func7;
       C.Curr_Instr <= B.Curr_Instr;  // debug tmp
+      C.JalSel <= JalSel;
     end
   end
 
@@ -295,6 +300,7 @@ module Datapath #(
       D.Alu_Result <= 0;
       D.MemReadData <= 0;
       D.rd <= 0;
+      D.JalSel <= 0;
     end else begin
       D.RegWrite <= C.RegWrite;
       D.MemtoReg <= C.MemtoReg;
@@ -305,6 +311,7 @@ module Datapath #(
       D.MemReadData <= ReadData;
       D.rd <= C.rd;
       D.Curr_Instr <= C.Curr_Instr;  //Debug Tmp
+      D.JalSel <= C.JalSel;
     end
   end
 

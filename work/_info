@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/thyago/Downloads/Projeto_IH_RISC-V
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1692840098
+Z2 !s110 1692842469
 !i10b 1
 !s100 J@Bf42a<9Q9R;nJSZl2>B2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1692840098.000000
+Z8 !s108 1692842468.000000
 !s107 verif/tb_top.sv|design/RISC_V.sv|design/Datapath.sv|design/instructionmemory.sv|design/datamemory.sv|design/mux4.sv|design/mux2.sv|design/imm_Gen.sv|design/HazardDetection.sv|design/ForwardingUnit.sv|design/flopr.sv|design/Controller.sv|design/BranchUnit.sv|design/ALUController.sv|design/alu.sv|design/RegFile.sv|design/RegPack.sv|design/Memoria32Data.sv|design/Memoria32.sv|design/ramOnChipData.v|design/ramOnChip32.v|design/adder.sv|
 Z9 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -86,17 +86,17 @@ vBranchUnit
 R1
 R2
 !i10b 1
-!s100 BD40d@AQC`MA^2_EZ19TM0
+!s100 ldeIbP1eOB1iP[2Yc3>Hg2
 R3
-IJYdCYCAcgLG?8joS07V?l1
+I:M;I>XHhml71;:kCS15`K3
 R4
 S1
 R0
-w1692834527
+w1692841969
 8design/BranchUnit.sv
 Fdesign/BranchUnit.sv
 !i122 0
-L0 3 27
+L0 3 29
 R7
 r1
 !s85 0
@@ -158,23 +158,23 @@ R9
 R10
 vDatapath
 R1
-Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 c^PZ0j3>AhX@ZM;S_mg]R3
-DXx4 work 16 Datapath_sv_unit 0 22 P>?OWn@dcVQSgjBX94g4W2
+Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 =no@EUX_FdL7d<UAWQS070
+DXx4 work 16 Datapath_sv_unit 0 22 TPo6PU?MSeAeAm;BP?9dQ0
 R2
 R4
 r1
 !s85 0
 !i10b 1
-!s100 0_Vnj5]EhDZFTSIdiP<[S1
-IfTn4Zi0gVMGI=:3RmQEez3
+!s100 5lYomj5hzKRkd>9KjIiWT1
+IdK0;[M[P]71ncX_VfDbi02
 !s105 Datapath_sv_unit
 S1
 R0
-Z13 w1692839598
+Z13 w1692842465
 Z14 8design/Datapath.sv
 Z15 Fdesign/Datapath.sv
 !i122 0
-L0 5 317
+L0 5 331
 R7
 31
 R8
@@ -187,12 +187,12 @@ XDatapath_sv_unit
 R1
 R12
 R2
-VP>?OWn@dcVQSgjBX94g4W2
+VTPo6PU?MSeAeAm;BP?9dQ0
 r1
 !s85 0
 !i10b 1
-!s100 87Ko4Y9WniKkCLkTIOOFC3
-IP>?OWn@dcVQSgjBX94g4W2
+!s100 c=lUl?Zk??:kBg>meH;zH0
+ITPo6PU?MSeAeAm;BP?9dQ0
 !i103 1
 S1
 R0
@@ -434,13 +434,13 @@ XPipe_Buf_Reg_PKG
 R1
 R2
 !i10b 1
-!s100 MCF;>;MG`N;M<jX>E?YBe0
+!s100 M917WF=E<@olShWlXU3N`3
 R3
-Ic^PZ0j3>AhX@ZM;S_mg]R3
-Vc^PZ0j3>AhX@ZM;S_mg]R3
+I=no@EUX_FdL7d<UAWQS070
+V=no@EUX_FdL7d<UAWQS070
 S1
 R0
-w1692839025
+w1692842065
 8design/RegPack.sv
 Fdesign/RegPack.sv
 !i122 0
