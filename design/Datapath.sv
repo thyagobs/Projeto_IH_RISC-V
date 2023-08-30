@@ -25,6 +25,7 @@ module Datapath #(
     output logic [          2:0] Funct3,
     output logic [          1:0] ALUOp_Current,
     output logic jals_Current,
+    output logic jalRs_Current,
     output logic [   DATA_W-1:0] WB_Data,        //Result After the last MUX
 
     // Para depuração no tesbench:
@@ -37,7 +38,8 @@ module Datapath #(
     output logic [DM_ADDRESS-1:0] addr,  // address
     output logic [DATA_W-1:0] wr_data,  // write data
     output logic [DATA_W-1:0] rd_data,  // read data
-    input logic jals
+    input logic jals,
+    input logic jalRs
 );
 
   logic [PC_W-1:0] PC, PCPlus4, Next_PC;
@@ -145,6 +147,7 @@ module Datapath #(
       B.ALUOp <= 0;
       B.Branch <= 0;
       B.jals <= 0;
+      B.jalRs <= 0;
       B.Curr_Pc <= 0;
       B.RD_One <= 0;
       B.RD_Two <= 0;
@@ -164,6 +167,7 @@ module Datapath #(
       B.ALUOp <= ALUOp;
       B.Branch <= Branch;
       B.jals <= jals;
+      B.jalRs <= jalRs;
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -194,6 +198,7 @@ module Datapath #(
   assign Funct3 = B.func3;
   assign ALUOp_Current = B.ALUOp;
   assign jals_Current = B.jals;
+  assign jalRs_Current = B.jalRs;
 
   mux4 #(32) FAmux (
       B.RD_One,
@@ -233,7 +238,8 @@ module Datapath #(
       BrPC,
       PcSel,
       JalSel,
-      B.jals
+      B.jals,
+      B.jalRs
   );
 
   // EX_MEM_Reg C;

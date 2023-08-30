@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/thyago/Downloads/Projeto_IH_RISC-V
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1693350663
+Z2 !s110 1693354009
 !i10b 1
 !s100 J@Bf42a<9Q9R;nJSZl2>B2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1693350663.000000
+Z8 !s108 1693354009.000000
 !s107 verif/tb_top.sv|design/RISC_V.sv|design/Datapath.sv|design/instructionmemory.sv|design/datamemory.sv|design/mux4.sv|design/mux3.sv|design/mux2.sv|design/imm_Gen.sv|design/HazardDetection.sv|design/ForwardingUnit.sv|design/flopr.sv|design/Controller.sv|design/BranchUnit.sv|design/ALUController.sv|design/alu.sv|design/RegFile.sv|design/RegPack.sv|design/Memoria32Data.sv|design/Memoria32.sv|design/ramOnChipData.v|design/ramOnChip32.v|design/adder.sv|
 Z9 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -61,17 +61,17 @@ vALUController
 R1
 R2
 !i10b 1
-!s100 3^<YRLbMMn1^mRA6kalGc0
+!s100 eYo8UR7Vmb9o:gfT9;_SB3
 R3
-Iz[Y8EI^ZkMa;YRaNV05_j0
+I1ZiXhODbU4O^UVfZQ;8Ef1
 R4
 S1
 R0
-w1692840047
+w1693352988
 8design/ALUController.sv
 Fdesign/ALUController.sv
 !i122 0
-L0 3 56
+L0 3 60
 R7
 r1
 !s85 0
@@ -86,17 +86,17 @@ vBranchUnit
 R1
 R2
 !i10b 1
-!s100 ldeIbP1eOB1iP[2Yc3>Hg2
+!s100 43l^jb]3^MGOL4@KbJW2k0
 R3
-I:M;I>XHhml71;:kCS15`K3
+IFcAFDW4VDO`gzG_nKdoH=0
 R4
 S1
 R0
-w1692841969
+w1693353945
 8design/BranchUnit.sv
 Fdesign/BranchUnit.sv
 !i122 0
-L0 3 29
+L0 3 30
 R7
 r1
 !s85 0
@@ -111,17 +111,17 @@ vController
 R1
 R2
 !i10b 1
-!s100 oBLA221=b:KYeTc0;<fnU3
+!s100 =FB9>Kj>iIeYjQjohUfCZ1
 R3
-I>nBnkMJ@;XH?<6g011_2D3
+I]:SkMIWOC]^R5@Ejb6:3J2
 R4
 S1
 R0
-w1693339713
+w1693352212
 8design/Controller.sv
 Fdesign/Controller.sv
 !i122 0
-L0 3 48
+L0 3 50
 R7
 r1
 !s85 0
@@ -158,23 +158,23 @@ R9
 R10
 vDatapath
 R1
-Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 =no@EUX_FdL7d<UAWQS070
-DXx4 work 16 Datapath_sv_unit 0 22 V:Lk`S8^mcdaM_elWCH4g2
+Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 _9zmFkWB:g7n1NhB<2[DU3
+DXx4 work 16 Datapath_sv_unit 0 22 W]C0;C?cgAgfW@CDGLe`?3
 R2
 R4
 r1
 !s85 0
 !i10b 1
-!s100 9@Z;7BPAGzaE3YmKMDmc:3
-IAdz56iKbk6=YVc1l8OVgL1
+!s100 Yml=bzVQm?nQUk04SZhlN2
+IQEBWkFBWJ84?2dj_@2>ZT0
 !s105 Datapath_sv_unit
 S1
 R0
-Z13 w1693350639
+Z13 w1693353940
 Z14 8design/Datapath.sv
 Z15 Fdesign/Datapath.sv
 !i122 0
-L0 5 326
+L0 5 332
 R7
 31
 R8
@@ -187,12 +187,12 @@ XDatapath_sv_unit
 R1
 R12
 R2
-VV:Lk`S8^mcdaM_elWCH4g2
+VW]C0;C?cgAgfW@CDGLe`?3
 r1
 !s85 0
 !i10b 1
-!s100 jOe08`D]Xl0JjbQW<J3oi1
-IV:Lk`S8^mcdaM_elWCH4g2
+!s100 C^J@??OnPPWcW8gQ2::^L1
+IW]C0;C?cgAgfW@CDGLe`?3
 !i103 1
 S1
 R0
@@ -458,13 +458,13 @@ XPipe_Buf_Reg_PKG
 R1
 R2
 !i10b 1
-!s100 M917WF=E<@olShWlXU3N`3
+!s100 90hb^FJb>DEHBTHYc^gJ81
 R3
-I=no@EUX_FdL7d<UAWQS070
-V=no@EUX_FdL7d<UAWQS070
+I_9zmFkWB:g7n1NhB<2[DU3
+V_9zmFkWB:g7n1NhB<2[DU3
 S1
 R0
-w1692842065
+w1693353398
 8design/RegPack.sv
 Fdesign/RegPack.sv
 !i122 0
@@ -554,17 +554,17 @@ vriscv
 R1
 R2
 !i10b 1
-!s100 8o;67fI6=mJ[n<fWL=P=k0
+!s100 9m8AO8]A0IG0cO[j5mQCA2
 R3
-IL85O8n0@58iDe^g31aQU[0
+I[9Xm51mHhL=ECSW0^_I=12
 R4
 S1
 R0
-w1692839678
+w1693352411
 8design/RISC_V.sv
 Fdesign/RISC_V.sv
 !i122 0
-L0 3 77
+L0 3 81
 R7
 r1
 !s85 0

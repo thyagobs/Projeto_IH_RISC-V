@@ -15,6 +15,7 @@ package Pipe_Buf_Reg_PKG;
     logic [1:0]  ALUOp;
     logic        Branch;
     logic        jals;
+    logic        jalRs;
     logic [8:0]  Curr_Pc;
     logic [31:0] RD_One;
     logic [31:0] RD_Two;
