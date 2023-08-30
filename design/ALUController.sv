@@ -13,11 +13,6 @@ module ALUController (
     input logic clk
 );
 
-    // always @(posedge clk)
-    // begin
-    //     $display (">>>jals: %d, ALUOp = %b<<", jals, ALUOp);
-    // end
-
   assign Operation[0] = ((ALUOp == 2'b10) && (Funct3 == 3'b110) && (Funct7 == 7'b0000000)) ||  // OR
       ((ALUOp == 2'b10) && (Funct3 == 3'b100) && (Funct7 == 7'b0000000)) || // XOR
       ((ALUOp == 2'b01) && (Funct3 == 3'b001)) || // BNE

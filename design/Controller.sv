@@ -33,10 +33,6 @@ module Controller (
   assign SW = 7'b0100011;  //sw 
   assign BR = 7'b1100011;  //beq
 
-  // always @ (posedge clk)
-  // begin
-  //   $display (">>%b<<", Jals);
-  // end
 
   assign ALUSrc = (Opcode == LW) || (Opcode == SW) || (Opcode == I_TYPE) || (Opcode == U_TYPE) || (Opcode == JAL) || (Opcode == JALR);
   assign MemtoReg = (Opcode == LW);
